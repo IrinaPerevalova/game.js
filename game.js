@@ -198,7 +198,7 @@ class LevelParser {
 
   actorFromSymbol(gameSymbol) {
     if (gameSymbol === undefined) {
-      return undefined;
+      return;
     } 
     return this.gameDictionary[gameSymbol];
   }
@@ -209,7 +209,7 @@ class LevelParser {
     } else if (gameSymbol === '!') {
       return 'lava';
     } else {
-      return undefined;
+      return;
     }
   }
 
